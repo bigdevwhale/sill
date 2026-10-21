@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sill</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="later">Later</string>
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
+    <string name="a_friend">a friend</string>
+    <string name="all">All</string>
+    <string name="all_year">all year</string>
+    <string name="search">Search the catalogue</string>
+    <string name="nothing_found">Nothing like that in the catalogue. Write your own packet below.</string>
+
+    <!-- Welcome -->
+    <string name="welcome_sub">Five pots for everything you\'ve never tried.</string>
+    <string name="welcome_1">Sow a seed: try something new — a genre, a place, a craft, a kind of people.</string>
+    <string name="welcome_2">Water it: go back and do it again. Almost nothing new feels good the first time.</string>
+    <string name="welcome_3">When it blooms, it\'s yours. It moves out into the garden and frees the pot.</string>
+    <string name="welcome_go">Open the window</string>
+    <string name="your_name">Your name</string>
+    <string name="your_name_hint">Your name (optional)</string>
+    <string name="your_name_sub">Written on the seed packets you give to friends.</string>
+
+    <!-- The sill -->
+    <string name="tin">Seed tin</string>
+    <string name="herbarium">Herbarium</string>
+    <string name="settings">Settings</string>
+    <string name="last_sown">Last sowing — %1$s</string>
+    <string name="nothing_sown">Nothing sown yet</string>
+    <string name="wind_brought">The wind brought a seed: %1$s</string>
+    <string name="bloomed_hint">%1$s is in bloom — time to move it out</string>
+    <string name="on_the_sill">On the sill</string>
+    <string name="watered_of">watered %1$d of %2$d</string>
+    <string name="catalogue">Seed catalogue</string>
+    <string name="garden">Garden out of the window</string>
+    <string name="garden_n">Garden out of the window · %1$d</string>
+    <plurals name="free_pots">
+        <item quantity="one">Seed catalogue · %d free pot</item>
+        <item quantity="other">Seed catalogue · %d free pots</item>
+    </plurals>
+    <plurals name="compost_ready">
+        <item quantity="one">Compost ready for %d planting: it will grow faster.</item>
+        <item quantity="other">Compost ready for %d plantings: they will grow faster.</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+
+    <!-- Sections -->
+    <string name="s_herbs">Herbs</string>
+    <string name="s_flowers">Flowers</string>
+    <string name="s_roots">Roots</string>
+    <string name="s_grains">Grains</string>
+    <string name="s_vines">Vines</string>
+    <string name="s_cacti">Cacti</string>
+    <string name="s_mushrooms">Mushrooms</string>
+    <string name="s_trees">Trees</string>
+    <string name="h_herbs">Tastes, kitchens and drinks.</string>
+    <string name="h_flowers">Music, genres and art.</string>
+    <string name="h_roots">Crafts with your hands.</string>
+    <string name="h_grains">Learning, languages, sciences.</string>
+    <string name="h_vines">People, communities, meeting someone.</string>
+    <string name="h_cacti">The uncomfortable: cold, stage, being alone.</string>
+    <string name="h_mushrooms">The night and the strange.</string>
+    <string name="h_trees">Long skills, for years.</string>
+
+    <!-- Catalogue and packet -->
+    <string name="seeds">Seeds</string>
+    <string name="in_season">In season</string>
+    <string name="own_seed">Write your own packet</string>
+    <string name="own_seed_sub">For something that isn\'t in the catalogue.</string>
+    <string name="tag_pot">On the sill</string>
+    <string name="tag_garden">In the garden</string>
+    <string name="tag_compost">In the compost</string>
+    <string name="tag_dried">In the vase</string>
+    <string name="tag_tin">In the tin</string>
+    <plurals name="waterings_to_bloom">
+        <item quantity="one">%d watering to bloom</item>
+        <item quantity="other">%d waterings to bloom</item>
+    </plurals>
+    <plurals name="waterings">
+        <item quantity="one">%d watering</item>
+        <item quantity="other">%d waterings</item>
+    </plurals>
+    <string name="depth">Sowing depth</string>
+    <string name="depth_1">shallow</string>
+    <string name="depth_2">medium</string>
+    <string name="depth_3">deep</string>
+    <string name="germination">Germination</string>
+    <string name="germination_v">usually by try %1$d</string>
+    <string name="to_bloom">To bloom</string>
+    <string name="sow_when">Sow</string>
+    <string name="how_to_start">How to begin</string>
+    <string name="neighbors">Good neighbours</string>
+    <string name="sow">Sow it</string>
+    <string name="sow_again">Sow it again</string>
+    <string name="pots_full">All five pots are taken</string>
+    <string name="pots_full_sub">Move a bloom to the garden or let something go to free a pot.</string>
+    <string name="on_compost">On compost it blooms sooner: %1$d waterings to bloom.</string>
+    <string name="to_tin">Put in the tin for later</string>
+    <string name="out_of_tin">Take out of the tin</string>
+    <string name="blow_away">Blow it away</string>
+    <string name="growing_open">Growing on the sill</string>
+    <string name="in_garden_since">In the garden since %1$s</string>
+    <string name="give">Give to a friend</string>
+    <string name="give_seeds">Give its seeds to a friend</string>
+    <string name="give_title">A packet for a friend</string>
+    <string name="give_sub">Goes as a message. With Sill they share it back into the app and it lands in their seed tin.</string>
+    <string name="give_note">A note on the packet: «Try it, I loved it»</string>
+    <string name="give_send">Send</string>
+    <string name="give_invite">A seed packet for you in Sill. Share this message to the app to put it in your tin.</string>
+    <string name="gift_received">A packet from %1$s is in your tin</string>
+    <string name="gift_unknown">This packet is from a newer catalogue. Update Sill to open it.</string>
+
+    <!-- Origins -->
+    <string name="o_gift">A gift from %1$s</string>
+    <string name="o_wind">The wind brought it</string>
+    <string name="o_self">Self-sown by %1$s</string>
+    <string name="o_saved">Put aside for later</string>
+
+    <!-- Plant -->
+    <string name="st_seed">Sown, waiting for its first water</string>
+    <string name="st_sprout">Sprout</string>
+    <string name="st_leaves">True leaves</string>
+    <string name="st_bud">Buds</string>
+    <string name="st_bloom">In bloom</string>
+    <string name="th_fresh">fresh</string>
+    <string name="th_dry">wants water</string>
+    <string name="th_wilted">wilting</string>
+    <string name="sown_line">Sown %1$s. Water it the first time you try it.</string>
+    <string name="watered_line">Watered %1$s</string>
+    <string name="bloom_line">It\'s yours now. Move it to the garden to free the pot.</string>
+    <string name="water_first">I tried it — first water</string>
+    <string name="water">I did it again — water</string>
+    <string name="water_again">Water once more</string>
+    <string name="water_garden">I did it again</string>
+    <string name="to_garden">Move to the garden</string>
+    <string name="compost">Compost</string>
+    <string name="dry">Dry it</string>
+    <string name="sown_on">Sown %1$s</string>
+    <string name="sown_on_compost">Sown %1$s, on compost</string>
+    <string name="journal">Waterings</string>
+    <string name="open_packet">Open the packet</string>
+    <string name="uproot">Pull out</string>
+    <string name="in_compost_since">In the compost since %1$s</string>
+    <string name="dried_since">In the vase since %1$s</string>
+    <string name="water_title">One more time</string>
+    <string name="water_note">How did it go?</string>
+    <string name="photo">Add a photo</string>
+    <string name="photo_added">Photo added — take another</string>
+    <string name="no_camera">No camera app found</string>
+    <string name="water_save">Water</string>
+    <string name="bloomed_title">It bloomed!</string>
+    <string name="bloomed_text">This isn\'t new any more — it\'s yours. Move it out into the garden and the pot is free for the next seed.</string>
+    <plurals name="self_sown">
+        <item quantity="one">It dropped %d seed of a neighbour into your tin.</item>
+        <item quantity="other">It dropped %d seeds of its neighbours into your tin.</item>
+    </plurals>
+    <string name="compost_title">Didn\'t take?</string>
+    <string name="compost_text">That\'s a fair result, not a failure. It goes to the compost, and the next seed you sow grows on it faster.</string>
+    <string name="dry_title">Keep it dried?</string>
+    <string name="dry_text">It didn\'t take, but you\'d like to remember it. It goes into the vase on the sill.</string>
+    <string name="uproot_title">Pull it out?</string>
+    <string name="uproot_text">For a seed sown by mistake: it goes as if it was never sown, with its waterings. If you tried and it didn\'t take, the compost is better.</string>
+    <string name="unwater_title">Delete this watering?</string>
+
+    <!-- Garden -->
+    <string name="garden_empty">Nothing out here yet. Whatever blooms on the sill moves here and stays.</string>
+    <plurals name="garden_line">
+        <item quantity="one">%d thing took and became yours.</item>
+        <item quantity="other">%d things took and became yours.</item>
+    </plurals>
+    <string name="vase">The vase</string>
+    <string name="vase_sub">Didn\'t take, kept for the memory.</string>
+    <string name="compost_heap">The compost heap</string>
+    <string name="compost_used">All of it went into new plantings.</string>
+
+    <!-- Herbarium -->
+    <string name="herbarium_empty">Nothing was sown this year.</string>
+    <string name="stat_sown">sown</string>
+    <string name="stat_took">took</string>
+    <string name="stat_let_go">let go</string>
+    <string name="stat_water">watered</string>
+    <string name="fate_garden">took</string>
+    <string name="fate_compost">compost</string>
+    <string name="fate_dried">in the vase</string>
+
+    <!-- Tin -->
+    <string name="tin_sub">Packets waiting to be sown: gifts from friends, what the wind brought, what blooms dropped and what you put aside.</string>
+    <string name="tin_empty">The tin is empty.</string>
+
+    <!-- Own packet -->
+    <string name="own_name">What is it? «Sea kayaking»</string>
+    <string name="own_section">Section</string>
+    <string name="own_about">A line about it</string>
+    <string name="own_start">How to begin</string>
+    <string name="own_save">Print the packet</string>
+
+    <!-- Settings -->
+    <string name="language">Language</string>
+    <string name="lang_system">System</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ru">Русский</string>
+    <string name="about">About</string>
+    <string name="about_text">With the years we stop learning new things: the same music, the same places, the same people. Sill is a windowsill with five pots for everything you\'ve never tried. Sowing is trying, watering is going back, blooming is when it\'s yours.</string>
+    <string name="privacy">Everything stays on this phone. No account, no internet, no ads.</string>
+</resources>

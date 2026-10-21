@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Подоконник</string>
+    <string name="back">Назад</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="later">Потом</string>
+    <string name="today">сегодня</string>
+    <string name="yesterday">вчера</string>
+    <string name="a_friend">друг</string>
+    <string name="all">Все</string>
+    <string name="all_year">круглый год</string>
+    <string name="search">Поиск по каталогу</string>
+    <string name="nothing_found">Такого в каталоге нет. Напиши свой пакетик ниже.</string>
+
+    <!-- Welcome -->
+    <string name="welcome_sub">Пять горшков для всего, что ты ещё не пробовал.</string>
+    <string name="welcome_1">Посади семя: попробуй новое — жанр, место, ремесло, людей.</string>
+    <string name="welcome_2">Поливай: возвращайся и делай ещё раз. Почти ничего новое не нравится с первого раза.</string>
+    <string name="welcome_3">Расцвело — значит, теперь это твоё. Оно уходит в сад за окном и освобождает горшок.</string>
+    <string name="welcome_go">Открыть окно</string>
+    <string name="your_name">Твоё имя</string>
+    <string name="your_name_hint">Твоё имя (необязательно)</string>
+    <string name="your_name_sub">Им подписываются пакетики, которые ты даришь друзьям.</string>
+
+    <!-- The sill -->
+    <string name="tin">Жестянка с семенами</string>
+    <string name="herbarium">Гербарий</string>
+    <string name="settings">Настройки</string>
+    <string name="last_sown">Последний посев — %1$s</string>
+    <string name="nothing_sown">Ещё ничего не посажено</string>
+    <string name="wind_brought">Ветер принёс семя: %1$s</string>
+    <string name="bloomed_hint">%1$s — цветёт, пора пересадить в сад</string>
+    <string name="on_the_sill">На подоконнике</string>
+    <string name="watered_of">полито %1$d из %2$d</string>
+    <string name="catalogue">Каталог семян</string>
+    <string name="garden">Сад за окном</string>
+    <string name="garden_n">Сад за окном · %1$d</string>
+    <plurals name="free_pots">
+        <item quantity="one">Каталог семян · %d горшок свободен</item>
+        <item quantity="few">Каталог семян · %d горшка свободно</item>
+        <item quantity="many">Каталог семян · %d горшков свободно</item>
+        <item quantity="other">Каталог семян · %d горшка свободно</item>
+    </plurals>
+    <plurals name="compost_ready">
+        <item quantity="one">Компоста хватит на %d посадку: она вырастет быстрее.</item>
+        <item quantity="few">Компоста хватит на %d посадки: они вырастут быстрее.</item>
+        <item quantity="many">Компоста хватит на %d посадок: они вырастут быстрее.</item>
+        <item quantity="other">Компоста хватит на %d посадки: они вырастут быстрее.</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">%d день назад</item>
+        <item quantity="few">%d дня назад</item>
+        <item quantity="many">%d дней назад</item>
+        <item quantity="other">%d дня назад</item>
+    </plurals>
+
+    <!-- Sections -->
+    <string name="s_herbs">Пряные травы</string>
+    <string name="s_flowers">Цветы</string>
+    <string name="s_roots">Корнеплоды</string>
+    <string name="s_grains">Злаки</string>
+    <string name="s_vines">Вьюнки</string>
+    <string name="s_cacti">Кактусы</string>
+    <string name="s_mushrooms">Грибы</string>
+    <string name="s_trees">Деревья</string>
+    <string name="h_herbs">Вкусы, кухни и напитки.</string>
+    <string name="h_flowers">Музыка, жанры и искусство.</string>
+    <string name="h_roots">Ремёсла руками.</string>
+    <string name="h_grains">Учёба, языки, науки.</string>
+    <string name="h_vines">Люди, сообщества, знакомства.</string>
+    <string name="h_cacti">Некомфортное: холод, сцена, одиночество.</string>
+    <string name="h_mushrooms">Ночное и странное.</string>
+    <string name="h_trees">Долгие навыки, на годы.</string>
+
+    <!-- Catalogue and packet -->
+    <string name="seeds">Семена</string>
+    <string name="in_season">Сейчас сезон</string>
+    <string name="own_seed">Свой пакетик</string>
+    <string name="own_seed_sub">Для того, чего нет в каталоге.</string>
+    <string name="tag_pot">На подоконнике</string>
+    <string name="tag_garden">В саду</string>
+    <string name="tag_compost">В компосте</string>
+    <string name="tag_dried">В вазочке</string>
+    <string name="tag_tin">В жестянке</string>
+    <plurals name="waterings_to_bloom">
+        <item quantity="one">%d полив до цветения</item>
+        <item quantity="few">%d полива до цветения</item>
+        <item quantity="many">%d поливов до цветения</item>
+        <item quantity="other">%d полива до цветения</item>
+    </plurals>
+    <plurals name="waterings">
+        <item quantity="one">%d полив</item>
+        <item quantity="few">%d полива</item>
+        <item quantity="many">%d поливов</item>
+        <item quantity="other">%d полива</item>
+    </plurals>
+    <string name="depth">Глубина посева</string>
+    <string name="depth_1">мелко</string>
+    <string name="depth_2">средне</string>
+    <string name="depth_3">глубоко</string>
+    <string name="germination">Всхожесть</string>
+    <string name="germination_v">обычно с %1$d-й попытки</string>
+    <string name="to_bloom">До цветения</string>
+    <string name="sow_when">Сеять</string>
+    <string name="how_to_start">С чего начать</string>
+    <string name="neighbors">Хорошие соседи</string>
+    <string name="sow">Посадить</string>
+    <string name="sow_again">Посадить снова</string>
+    <string name="pots_full">Все пять горшков заняты</string>
+    <string name="pots_full_sub">Пересади цветущее в сад или отпусти что-то, чтобы освободить горшок.</string>
+    <string name="on_compost">На компосте расцветёт быстрее: поливов до цветения — %1$d.</string>
+    <string name="to_tin">Отложить в жестянку</string>
+    <string name="out_of_tin">Убрать из жестянки</string>
+    <string name="blow_away">Сдуть</string>
+    <string name="growing_open">Растёт на подоконнике</string>
+    <string name="in_garden_since">В саду с %1$s</string>
+    <string name="give">Подарить другу</string>
+    <string name="give_seeds">Подарить семена другу</string>
+    <string name="give_title">Пакетик для друга</string>
+    <string name="give_sub">Уйдёт сообщением. Если у друга есть Подоконник, он поделится им с приложением, и пакетик окажется в его жестянке.</string>
+    <string name="give_note">Записка на пакетике: «Попробуй, мне зашло»</string>
+    <string name="give_send">Отправить</string>
+    <string name="give_invite">Пакетик семян для тебя в «Подоконнике». Поделись этим сообщением с приложением, чтобы положить его в жестянку.</string>
+    <string name="gift_received">Пакетик от: %1$s — в жестянке</string>
+    <string name="gift_unknown">Этот пакетик из более нового каталога. Обнови Подоконник, чтобы его открыть.</string>
+
+    <!-- Origins -->
+    <string name="o_gift">Подарок: %1$s</string>
+    <string name="o_wind">Ветер принёс</string>
+    <string name="o_self">Самосев: %1$s</string>
+    <string name="o_saved">Отложено на потом</string>
+
+    <!-- Plant -->
+    <string name="st_seed">Посажено, ждёт первого полива</string>
+    <string name="st_sprout">Росток</string>
+    <string name="st_leaves">Настоящие листья</string>
+    <string name="st_bud">Бутоны</string>
+    <string name="st_bloom">Цветёт</string>
+    <string name="th_fresh">свежий</string>
+    <string name="th_dry">просит пить</string>
+    <string name="th_wilted">никнет</string>
+    <string name="sown_line">Посажено %1$s. Полей, когда попробуешь в первый раз.</string>
+    <string name="watered_line">Полито %1$s</string>
+    <string name="bloom_line">Теперь это твоё. Пересади в сад, чтобы освободить горшок.</string>
+    <string name="water_first">Я попробовал — первый полив</string>
+    <string name="water">Я сделал это ещё раз — полить</string>
+    <string name="water_again">Полить ещё раз</string>
+    <string name="water_garden">Я сделал это ещё раз</string>
+    <string name="to_garden">Пересадить в сад</string>
+    <string name="compost">В компост</string>
+    <string name="dry">Засушить</string>
+    <string name="sown_on">Посажено %1$s</string>
+    <string name="sown_on_compost">Посажено %1$s, на компосте</string>
+    <string name="journal">Поливы</string>
+    <string name="open_packet">Открыть пакетик</string>
+    <string name="uproot">Выдернуть</string>
+    <string name="in_compost_since">В компосте с %1$s</string>
+    <string name="dried_since">В вазочке с %1$s</string>
+    <string name="water_title">Ещё один раз</string>
+    <string name="water_note">Как прошло?</string>
+    <string name="photo">Добавить фото</string>
+    <string name="photo_added">Фото есть — переснять</string>
+    <string name="no_camera">Не нашлось приложения камеры</string>
+    <string name="water_save">Полить</string>
+    <string name="bloomed_title">Расцвело!</string>
+    <string name="bloomed_text">Это уже не новое — это твоё. Пересади в сад за окном, и горшок освободится для следующего семени.</string>
+    <plurals name="self_sown">
+        <item quantity="one">Оно уронило в жестянку %d семя соседа.</item>
+        <item quantity="few">Оно уронило в жестянку %d семени соседей.</item>
+        <item quantity="many">Оно уронило в жестянку %d семян соседей.</item>
+        <item quantity="other">Оно уронило в жестянку %d семени соседей.</item>
+    </plurals>
+    <string name="compost_title">Не прижилось?</string>
+    <string name="compost_text">Это честный результат, а не провал. Растение уйдёт в компост, и следующее семя вырастет на нём быстрее.</string>
+    <string name="dry_title">Засушить на память?</string>
+    <string name="dry_text">Не прижилось, но хочется помнить. Встанет в вазочку на подоконнике.</string>
+    <string name="uproot_title">Выдернуть?</string>
+    <string name="uproot_text">Для семени, посаженного по ошибке: оно исчезнет вместе с поливами, как будто его и не было. Если пробовал и не прижилось, лучше в компост.</string>
+    <string name="unwater_title">Удалить этот полив?</string>
+
+    <!-- Garden -->
+    <string name="garden_empty">Здесь пока пусто. Всё, что расцветёт на подоконнике, переедет сюда и останется.</string>
+    <plurals name="garden_line">
+        <item quantity="one">%d дело прижилось и стало твоим.</item>
+        <item quantity="few">%d дела прижились и стали твоими.</item>
+        <item quantity="many">%d дел прижились и стали твоими.</item>
+        <item quantity="other">%d дела прижились и стали твоими.</item>
+    </plurals>
+    <string name="vase">Вазочка</string>
+    <string name="vase_sub">Не прижилось, но осталось на память.</string>
+    <string name="compost_heap">Компостная куча</string>
+    <string name="compost_used">Весь компост ушёл в новые посадки.</string>
+
+    <!-- Herbarium -->
+    <string name="herbarium_empty">В этом году ничего не сажали.</string>
+    <string name="stat_sown">посажено</string>
+    <string name="stat_took">прижилось</string>
+    <string name="stat_let_go">отпущено</string>
+    <string name="stat_water">полито</string>
+    <string name="fate_garden">прижилось</string>
+    <string name="fate_compost">компост</string>
+    <string name="fate_dried">в вазочке</string>
+
+    <!-- Tin -->
+    <string name="tin_sub">Пакетики, которые ждут посадки: подарки друзей, то, что принёс ветер, самосев с цветущих и то, что ты отложил.</string>
+    <string name="tin_empty">Жестянка пуста.</string>
+
+    <!-- Own packet -->
+    <string name="own_name">Что это? «Морской каякинг»</string>
+    <string name="own_section">Раздел</string>
+    <string name="own_about">Пара слов об этом</string>
+    <string name="own_start">С чего начать</string>
+    <string name="own_save">Напечатать пакетик</string>
+
+    <!-- Settings -->
+    <string name="language">Язык</string>
+    <string name="lang_system">Системный</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ru">Русский</string>
+    <string name="about">О приложении</string>
+    <string name="about_text">С годами мы перестаём учиться новому: та же музыка, те же места, те же люди. Подоконник — это пять горшков для всего, что ты ещё не пробовал. Посадить — значит попробовать, полить — вернуться, расцвести — сделать своим.</string>
+    <string name="privacy">Всё хранится только на этом телефоне. Без аккаунта, без интернета, без рекламы.</string>
+</resources>

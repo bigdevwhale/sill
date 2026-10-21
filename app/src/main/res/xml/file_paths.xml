@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The phone's camera writes a watering's photo here. -->
+<paths>
+    <files-path name="photos" path="photos/" />
+</paths>
