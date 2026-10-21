@@ -41,6 +41,7 @@ import app.sill.ui.art.PotView
 import app.sill.ui.catalogue.CatalogueScreen
 import app.sill.ui.components.rememberNow
 import app.sill.ui.garden.GardenScreen
+import app.sill.ui.onboarding.GuideScreen
 import app.sill.ui.onboarding.WelcomeScreen
 import app.sill.ui.own.OwnSeedScreen
 import app.sill.ui.packet.PacketScreen
@@ -145,6 +146,7 @@ class Go(private val nav: NavHostController) {
     fun tin() = nav.navigate("tin") { launchSingleTop = true }
     fun own() = nav.navigate("own") { launchSingleTop = true }
     fun settings() = nav.navigate("settings") { launchSingleTop = true }
+    fun guide() = nav.navigate("guide") { launchSingleTop = true }
     fun back() { nav.popBackStack() }
 
     /** Just sown: back to the sill, where the new pot is. */
@@ -174,7 +176,7 @@ fun SillRoot(settings: Settings) {
     // Onboarded elsewhere (the demo seed): leave the welcome screen.
     val route = nav.currentBackStackEntryAsState().value?.destination?.route
     LaunchedEffect(settings.onboarded, route) {
-        if (settings.onboarded && route == "welcome") nav.navigate("sill") { popUpTo("welcome") { inclusive = true } }
+        if (settings.onboarded && route == "welcome") nav.navigate("sill") { popUpTo("welcome") { inclusive = true }; launchSingleTop = true }
     }
     // Once a week the wind leaves a seed on the sill.
     LaunchedEffect(settings.onboarded, now / 3_600_000L) {
@@ -212,7 +214,13 @@ fun SillRoot(settings: Settings) {
             popExitTransition = { fadeOut(tween(180)) },
         ) {
             val id = listOf(navArgument("id") { type = NavType.LongType })
-            composable("welcome") { WelcomeScreen { nav.navigate("sill") { popUpTo("welcome") { inclusive = true } } } }
+            composable("welcome") {
+                WelcomeScreen { toCatalogue ->
+                    nav.navigate("sill") { popUpTo("welcome") { inclusive = true } }
+                    if (toCatalogue) nav.navigate("catalogue")
+                }
+            }
+            composable("guide") { GuideScreen(first = false) { toCatalogue -> nav.popBackStack(); if (toCatalogue) go.catalogue() } }
             composable("sill") { SillScreen(home, go) }
             composable("catalogue") { CatalogueScreen(home, go) }
             composable("packet/{key}/{tin}", arguments = listOf(navArgument("key") { type = NavType.StringType }, navArgument("tin") { type = NavType.LongType })) { e ->

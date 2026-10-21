@@ -11,4 +11,5 @@ The first version.
 - The seed tin: a wind seed each week from the section you've sown least, self-sown neighbours of blooms, packets put aside.
 - Gifts to friends as plain text with a sticky note; shared back in, they land in the tin.
 - Hand-written packets, and the year's herbarium.
+- A five-page guide on the first run (and behind the ? on the sill): why, the eight sections, sowing, watering, bloom and compost; the catalogue is grouped by section with what each one holds.
 - Photos with the phone's own camera. English and Russian. No internet.

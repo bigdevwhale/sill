@@ -338,3 +338,13 @@ fun HerbariumSheet(look: PlantLook, modifier: Modifier = Modifier) {
         }
     }
 }
+
+/** One pot with one plant, small, on nothing: for the guide and the catalogue's section heads. */
+@Composable
+fun MiniPot(look: PlantLook, modifier: Modifier = Modifier, style: Int = 0, plantScale: Float = 2.3f) {
+    Canvas(modifier) {
+        val potH = size.height * 0.32f
+        val soil = drawPot(size.width / 2, size.height * 0.97f, minOf(potH * 1.25f, size.width * 0.9f), potH, style, false)
+        drawPlant(look, soil, (size.height - potH) * 0.95f * plantScale / 2.3f)
+    }
+}

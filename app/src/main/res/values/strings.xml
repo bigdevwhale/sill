@@ -14,11 +14,6 @@
     <string name="nothing_found">Nothing like that in the catalogue. Write your own packet below.</string>
 
     <!-- Welcome -->
-    <string name="welcome_sub">Five pots for everything you\'ve never tried.</string>
-    <string name="welcome_1">Sow a seed: try something new — a genre, a place, a craft, a kind of people.</string>
-    <string name="welcome_2">Water it: go back and do it again. Almost nothing new feels good the first time.</string>
-    <string name="welcome_3">When it blooms, it\'s yours. It moves out into the garden and frees the pot.</string>
-    <string name="welcome_go">Open the window</string>
     <string name="your_name">Your name</string>
     <string name="your_name_hint">Your name (optional)</string>
     <string name="your_name_sub">Written on the seed packets you give to friends.</string>
@@ -207,4 +202,31 @@
     <string name="about">About</string>
     <string name="about_text">With the years we stop learning new things: the same music, the same places, the same people. Sill is a windowsill with five pots for everything you\'ve never tried. Sowing is trying, watering is going back, blooming is when it\'s yours.</string>
     <string name="privacy">Everything stays on this phone. No account, no internet, no ads.</string>
+
+    <!-- Guide -->
+    <string name="guide_skip">Skip</string>
+    <string name="guide_close">Close</string>
+    <string name="guide_next">Next</string>
+    <string name="guide_first_seed">Choose my first seed</string>
+    <string name="guide_look_around">Just look around</string>
+    <string name="how_it_works">How it works</string>
+    <string name="guide_1_t">The brain gets used to things</string>
+    <string name="guide_1_b">With the years we stop trying new things: the same music, the same food, the same routes, the same people. The world gets smaller without us noticing. Sill is a windowsill with five pots for everything you\'ve never tried.</string>
+    <string name="guide_2_t">One seed is one new thing</string>
+    <string name="guide_2_b">The seed catalogue has 121 packets: a genre, a kitchen, a craft, a place, a kind of evening. They\'re sorted into eight sections, and each section grows its own kind of plant:</string>
+    <string name="guide_3_t">Sowing is deciding to try</string>
+    <string name="guide_3_b">Pick a packet and sow it in a free pot. The back of the packet says how to begin. When you\'ve tried it for the first time, give it its first water and a sprout comes up.</string>
+    <string name="guide_3_n">Only five pots: room enough to try, too little to start twenty things and drop them all.</string>
+    <string name="guide_4_t">Watering is doing it again</string>
+    <string name="guide_4_b">Almost nothing new feels good the first time. Every time you go back — another jam session, another evening at the wheel — water the plant and write a line about how it went. It grows leaves, then buds.</string>
+    <string name="guide_4_n">A new kitchen blooms in 3 waterings, the cello in 40. The packet says how many. Left alone, a plant droops — no reminders, you\'ll just see it.</string>
+    <string name="guide_5_t">Bloomed — it\'s yours</string>
+    <string name="guide_5_b">When it blooms, it isn\'t new any more: move it out into the garden beyond the window, and the pot is free for the next seed. Didn\'t take? Put it in the compost — that\'s a fair result, and the next seed grows faster on it.</string>
+    <string name="guide_to_garden">to the garden</string>
+    <string name="guide_to_compost">to the compost</string>
+    <string name="first_steps">An empty sill</string>
+    <string name="first_step_1">Open the seed catalogue and pick something you\'ve never tried.</string>
+    <string name="first_step_2">Sow it, and when you\'ve tried it, water it.</string>
+    <string name="first_step_3">Go back and water it again until it blooms.</string>
+    <string name="catalogue_sub">Every packet is one new thing to try. Tap a section to see only it.</string>
 </resources>

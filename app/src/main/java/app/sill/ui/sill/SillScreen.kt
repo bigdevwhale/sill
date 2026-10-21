@@ -21,6 +21,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.HelpOutline
 import androidx.compose.material.icons.automirrored.rounded.KeyboardArrowRight
 import androidx.compose.material.icons.rounded.Air
 import androidx.compose.material.icons.rounded.AutoStories
@@ -63,9 +64,10 @@ fun SillScreen(home: Home, go: Go) {
     val c = ctx()
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).statusBarsPadding().navigationBarsPadding()) {
         Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 6.dp, top = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text(stringResource(R.string.app_name), style = SType.Hero.copy(fontSize = 30.sp), modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.app_name), style = SType.Hero.copy(fontSize = 27.sp), maxLines = 1, modifier = Modifier.weight(1f))
             Badged(home.packets.size) { IconButton(onClick = go::tin) { Icon(Icons.Rounded.Inventory2, stringResource(R.string.tin), tint = S.c.ink) } }
             IconButton(onClick = go::year) { Icon(Icons.Rounded.AutoStories, stringResource(R.string.herbarium), tint = S.c.ink) }
+            IconButton(onClick = go::guide) { Icon(Icons.AutoMirrored.Rounded.HelpOutline, stringResource(R.string.how_it_works), tint = S.c.ink) }
             IconButton(onClick = go::settings) { Icon(Icons.Rounded.Settings, stringResource(R.string.settings), tint = S.c.ink) }
         }
         SillScene(
@@ -88,6 +90,7 @@ fun SillScreen(home: Home, go: Go) {
             home.blooming.forEach { p ->
                 home.seed(p.seed)?.let { s -> Hint(Icons.Rounded.LocalFlorist, stringResource(R.string.bloomed_hint, s.name(home.ru)), S.c.clay) { go.plant(p.id) } }
             }
+            if (home.plantings.isEmpty()) FirstSteps(go)
             if (home.sown.isNotEmpty()) {
                 SectionTitle(stringResource(R.string.on_the_sill))
                 home.pots.forEachIndexed { i, p ->
@@ -170,5 +173,21 @@ private fun Badged(count: Int, content: @Composable () -> Unit) {
             Modifier.align(Alignment.TopEnd).padding(top = 6.dp, end = 6.dp).size(17.dp).clip(CircleShape).background(S.c.clay),
             contentAlignment = Alignment.Center,
         ) { Text("$count", style = SType.Small.copy(color = S.c.onClay, fontSize = 10.sp)) }
+    }
+}
+
+/** For an empty sill: the three steps, and the way to the catalogue. */
+@Composable
+private fun FirstSteps(go: Go) {
+    Column(Modifier.fillMaxWidth().padding(top = 14.dp).clip(S.RMd).background(S.c.surface).border(1.dp, S.c.line, S.RMd).padding(16.dp)) {
+        Text(stringResource(R.string.first_steps), style = SType.Title)
+        Spacer(Modifier.height(10.dp))
+        listOf(R.string.first_step_1, R.string.first_step_2, R.string.first_step_3).forEachIndexed { i, t ->
+            Row(Modifier.padding(vertical = 4.dp)) {
+                Text("${i + 1}.", style = SType.Strong.copy(color = S.c.clay), modifier = Modifier.width(24.dp))
+                Text(stringResource(t), style = SType.Body, modifier = Modifier.weight(1f))
+            }
+        }
+        Text(stringResource(R.string.how_it_works), style = SType.Button.copy(color = S.c.clay, fontSize = 15.sp), modifier = Modifier.padding(top = 8.dp).clip(S.RSm).clickable(onClick = go::guide).padding(vertical = 6.dp))
     }
 }

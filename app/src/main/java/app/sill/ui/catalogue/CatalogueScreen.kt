@@ -44,7 +44,14 @@ import app.sill.ui.Go
 import app.sill.ui.Home
 import app.sill.ui.Standing
 import app.sill.ui.T
+import app.sill.ui.art.MiniPot
+import app.sill.ui.art.PlantLook
 import app.sill.ui.art.SeedPacket
+import app.sill.ui.art.darker
+import app.sill.domain.Stage
+import androidx.compose.ui.graphics.Color
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import app.sill.ui.components.Chip
 import app.sill.ui.components.Field
 import app.sill.ui.components.TopBar
@@ -85,13 +92,22 @@ fun CatalogueScreen(home: Home, go: Go) {
                         Chip(stringResource(R.string.all), section == null) { section = null }
                         Section.entries.forEach { s -> Chip(T.section(c, s), section == s.name) { section = if (section == s.name) null else s.name } }
                     }
-                    section?.let { Text(T.holds(c, Section.valueOf(it)), style = SType.Muted, modifier = Modifier.padding(top = 10.dp, start = 4.dp)) }
+                    section?.let { SectionHead(Section.valueOf(it), null) }
+                    if (section == null && query.isBlank()) Text(stringResource(R.string.catalogue_sub), style = SType.Muted, modifier = Modifier.padding(top = 12.dp, start = 4.dp))
                 }
             }
             if (shown.isEmpty()) item(span = { GridItemSpan(2) }) {
                 Text(stringResource(R.string.nothing_found), style = SType.Muted, modifier = Modifier.padding(24.dp))
             }
-            items(shown, key = { it.key }) { s -> CatalogueItem(s, home, go) }
+            // Browsing everything: section by section, each with a head saying what it holds.
+            if (section == null && query.isBlank()) {
+                shown.groupBy { it.section }.toSortedMap().forEach { (sec, seeds) ->
+                    item(span = { GridItemSpan(2) }, key = "head-${sec.name}") { SectionHead(sec) { section = sec.name } }
+                    items(seeds, key = { it.key }) { s -> CatalogueItem(s, home, go) }
+                }
+            } else {
+                items(shown, key = { it.key }) { s -> CatalogueItem(s, home, go) }
+            }
             item(span = { GridItemSpan(2) }) {
                 Box(
                     Modifier.fillMaxWidth().clip(S.RMd).background(S.c.surface).clickable(onClick = go::own).padding(18.dp),
@@ -128,5 +144,23 @@ private fun CatalogueItem(s: Seed, home: Home, go: Go) {
             Standing.NONE -> null
         }
         if (tag != null) Text(stringResource(tag), style = SType.Small.copy(color = if (standing == Standing.POT || standing == Standing.GARDEN) S.c.leaf else S.c.faint), modifier = Modifier.padding(top = 6.dp, start = 2.dp))
+    }
+}
+
+/** A section's head: its plant, its name in its ink, and what kind of new things it holds. */
+@Composable
+private fun SectionHead(s: Section, onClick: (() -> Unit)?) {
+    val c = ctx()
+    Row(
+        Modifier.fillMaxWidth().padding(top = 14.dp).clip(S.RMd).background(Color(s.ink).copy(alpha = 0.1f))
+            .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier).padding(horizontal = 12.dp, vertical = 8.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        MiniPot(PlantLook(s, s.name.hashCode(), s.ordinal * 7L + 3, 1f, Stage.BLOOM), Modifier.size(width = 44.dp, height = 54.dp), style = s.ordinal)
+        Spacer(Modifier.width(12.dp))
+        Column(Modifier.weight(1f)) {
+            Text(T.section(c, s), style = SType.Title.copy(color = Color(s.ink).darker(0.1f)))
+            Text(T.holds(c, s), style = SType.Muted)
+        }
     }
 }

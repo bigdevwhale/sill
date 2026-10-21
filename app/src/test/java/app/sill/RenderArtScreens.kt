@@ -17,6 +17,7 @@ import app.sill.ui.Home
 import app.sill.ui.art.Art
 import app.sill.ui.catalogue.CatalogueScreen
 import app.sill.ui.garden.GardenScreen
+import app.sill.ui.onboarding.GuideScreen
 import app.sill.ui.onboarding.WelcomeScreen
 import app.sill.ui.packet.PacketScreen
 import app.sill.ui.plant.PlantScreen
@@ -76,6 +77,10 @@ abstract class ScreensBase {
     private fun potWith(h: Home, stage: Stage) = h.sown.first { h.stage(it) == stage }
 
     @Test fun welcome() = home().let { shot("0-welcome", it) { _, _ -> WelcomeScreen {} } }
+    @Test fun guideSections() = home().let { shot("0-guide-2", it) { _, _ -> GuideScreen(first = true, startPage = 1) {} } }
+    @Test fun guideSow() = home().let { shot("0-guide-3", it) { _, _ -> GuideScreen(first = true, startPage = 2) {} } }
+    @Test fun guideWater() = home().let { shot("0-guide-4", it) { _, _ -> GuideScreen(first = true, startPage = 3) {} } }
+    @Test fun guideBloom() = home().let { shot("0-guide-5", it) { _, _ -> GuideScreen(first = true, startPage = 4) {} } }
     @Test fun sill() = home().let { shot("1-sill", it) { h, go -> SillScreen(h, go) } }
     @Test fun plant() = home().let { h -> shot("2-plant", h) { hh, go -> PlantScreen(potWith(hh, Stage.BUD).id, hh, go) } }
     @Test fun catalogue() = home().let { shot("3-catalogue", it) { h, go -> CatalogueScreen(h, go) } }
