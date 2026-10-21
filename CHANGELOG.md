@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.0] - 2026-10-22
 
-The first version.
+The first release.
 
 - A seed catalogue of 121 packets in eight sections, printed like lithographs, with the back of the packet: depth, germination, waterings to bloom, when to sow, neighbours and a first step.
 - Five pots on a windowsill; sowing is trying, watering is going back, the bloom moves out into the garden beyond the window.
