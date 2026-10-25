@@ -24,6 +24,7 @@ import app.sill.container
 import app.sill.ui.Go
 import app.sill.ui.Home
 import app.sill.ui.Language
+import app.sill.ui.components.CommunityLinks
 import app.sill.ui.components.Field
 import app.sill.ui.components.SectionTitle
 import app.sill.ui.components.Segmented
@@ -48,6 +49,8 @@ fun SettingsScreen(home: Home, go: Go) {
                 { stringResource(when (it) { Language.EN -> R.string.lang_en; Language.RU -> R.string.lang_ru; else -> R.string.lang_system }) },
                 { lang = it; Language.set(it) },
             )
+            SectionTitle(stringResource(R.string.community))
+            CommunityLinks()
             SectionTitle(stringResource(R.string.about))
             Text(stringResource(R.string.about_text), style = SType.Body)
             Spacer(Modifier.height(10.dp))
